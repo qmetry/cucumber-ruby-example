@@ -1,5 +1,7 @@
 # cucumber-ruby-example
 
+This is sample cucumber + selenium project in Ruby. It shows how to upload test result file on JIRA instance using [QMetry for JIRA - Test Management](https://marketplace.atlassian.com/plugins/com.infostretch.QmetryTestManager/cloud/overview).  
+
 ### Install Dependencies
 
 Supported Ruby Version - 2.0+  
@@ -20,7 +22,7 @@ You need to install [geckodriver](https://github.com/mozilla/geckodriver/release
 
 First you need to provide few details in Steps file. `features > step_definitions > search_steps.rb`. 
 
-1. Select type of JIRA hosting - Cloud Or Server/On Primise/Data Center. 
+1. Select type of JIRA hosting - Cloud Or Server/On Premise/Data Center. 
 2. Provide API key. You can get this value by logging inro your JIRA instance. Click on QMetry Menu on top -> Automation API. Here you can get API key of your selected project. 
 3. If your JIRA hosting type is Server/Data Center then you need to set JIRA username and passoword too for REST API access.
 4. And finally QMetry automation API URL - This value is also present in Automation API page.
