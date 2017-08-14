@@ -1,0 +1,74 @@
+[
+  {
+    "uri": "features/my_first.feature",
+    "id": "search-qmetry",
+    "keyword": "Feature",
+    "name": "Search QMetry",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "search-qmetry;",
+        "keyword": "Scenario",
+        "name": "",
+        "description": "",
+        "line": 3,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "We navigate to the homepage",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/search_steps.rb:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5734336000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "We search for the word agile",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/search_steps.rb:36"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Unable to locate element: #s (Selenium::WebDriver::Error::NoSuchElementError)\n./features/step_definitions/search_steps.rb:37:in `/^We search for the word agile$/'\nfeatures/my_first.feature:5:in `When We search for the word agile'",
+              "duration": 45657000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "The results for the search will be displayed",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/search_steps.rb:42"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "after": [
+          {
+            "output": [
+              "cloud code",
+              "-------Import Results--------"
+            ],
+            "match": {
+              "location": "features/step_definitions/search_steps.rb:52"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Failed to open TCP connection to importresults.qmetry.com:443 (Connection refused - connect(2) for \"importresults.qmetry.com\" port 443) (Errno::ECONNREFUSED)\n./features/step_definitions/search_steps.rb:64:in `After'",
+              "duration": 134383000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
